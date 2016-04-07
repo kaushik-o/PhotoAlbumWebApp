@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Album App</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="vendors/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    </head>
+
+    <body class="container">
+        
+        <div id="image-modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Medium Image</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img id="original-image" src="#" alt="image not available">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-remove"</button>
+                        <button id="play-stop-slideshow" type="button" class="btn btn-primary"><span></span></button>
+                        <button id="prev-image" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span></button>
+                        <button id="next-image" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script data-main="resources/js/app.js" src="vendors/require.js"></script>
+    </body>
+</html>
